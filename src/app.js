@@ -11,5 +11,5 @@ app.use(express.static(path.join(__dirname, "../public")));
 app.use("/users", usersRouterApi);
 
 
-console.log(`Servidor corriendo en el puerto ${port}`)
+console.log(`Servidor corriendo en el puerto http://localhost:${process.env.PORT}`)
 module.exports = app;

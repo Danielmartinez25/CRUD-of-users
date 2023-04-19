@@ -1,12 +1,9 @@
 module.exports = {
     create : async(req,res) => {
         try {
-            
-        } catch (error) {
-            
+        } catch (error) {   
         }
-    }
-    ,
+    },
     read : async (req,res) => {
         try {
             
