@@ -4,10 +4,10 @@ const {create,read,update,deleted} = require('../controllers/usersApiController'
 
 
 router
-.post('/users/create', create)
-.get('/users/read', read)
-.put('/users/update/:id',update)
-.delete('/users/deleted',deleted)
+.post('/create', create)
+.get('/read', read)
+.put('/update/:id',update)
+.delete('/deleted',deleted)
 
 
 module.exports = router
