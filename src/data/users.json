@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "User",
+    "password": "123123",
+    "email": "user@gmail.com",
+    "country": "Argentina"
+  }
+]
