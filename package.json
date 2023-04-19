@@ -4,7 +4,9 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "create:db" : "sequelize db:create && sequelize db:migrate && sequelize db:seed:all",
+    "reset:db" : "sequelize db:drop && npm run create:db"
   },
   "keywords": [],
   "author": "",
