@@ -5,9 +5,8 @@ module.exports = {
   create: async (req, res) => {
     try {
       const { name, surname, email, password } = req.body;
-      if (
-        [name,surname,email,password].includes("")
-      ) throw createError(400, "Todos los campos son obligatorios");
+      if ([name, surname, email, password].includes(""))
+        throw createError(400, "Todos los campos son obligatorios");
       const user = await User.create({
         name: name?.trim(),
         surname: surname?.trim(),
@@ -21,9 +20,9 @@ module.exports = {
         data: user,
       });
     } catch (error) {
-      res.status(500).json({
+      res.status(400).json({
         ok: false,
-        status: 500,
+        status: 400,
         msg: error.message,
       });
     }
@@ -36,7 +35,7 @@ module.exports = {
   deleted: async (req, res) => {
     try {
       const userId = req.params.id;
-      console.log(userId);
+      console.log(req.params.id);
       await User.destroy({
         where: {
           id: userId,

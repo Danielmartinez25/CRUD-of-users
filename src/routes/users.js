@@ -7,7 +7,7 @@ router
 .post('/create', create)
 .get('/read', read)
 .put('/update/:id',update)
-.delete('/deleted/:id',deleted)
+.delete('/delete/:id',deleted)
 
 
 module.exports = router
