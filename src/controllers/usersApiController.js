@@ -17,7 +17,7 @@ module.exports = {
     update : async(req,res) => {
 
     },
-    delete : async(req,res) => {
-        
+    deleted : async(req,res) => {
+
     }
 }
