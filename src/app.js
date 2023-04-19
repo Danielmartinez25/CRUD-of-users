@@ -5,7 +5,6 @@ const logger = require("morgan");
 let usersRouterApi = require("./routes/users");
 let app = express();
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger("dev"));
