@@ -5,7 +5,7 @@ const {create,read,update,deleted} = require('../controllers/usersApiController'
 
 router
 .post('/create', create)
-.get('/read', read)
+.get('/read/:id', read)
 .put('/update/:id',update)
 .delete('/delete/:id',deleted)
 
